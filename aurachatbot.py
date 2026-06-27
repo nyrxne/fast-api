@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field
 from google import genai
 
 from legal_database import LEGAL_DATABASE
-api_key = GEMINI_API_KEY
+api_key = GEMINI_API_KEY #Key is rotated
 if not api_key:
     raise EnvironmentError(
         "GEMINI_API_KEY environment variable not set. "
