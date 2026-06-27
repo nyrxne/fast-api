@@ -201,10 +201,10 @@ app = FastAPI(
 )
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # allow_origins=["https://aura-guide-calm.lovable.app", "https://yourdomain.com"]
+    allow_origins=["https://aura-legal-guide.lovable.app"], 
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["https://aura-legal-guide.lovable.app"],
+    allow_headers=["https://aura-legal-guide.lovable.app"],
 )
 
 class ChatRequest(BaseModel):
