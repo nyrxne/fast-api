@@ -203,8 +203,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://aura-legal-guide.lovable.app"], 
     allow_credentials=True,
-    allow_methods=["https://aura-legal-guide.lovable.app"],
-    allow_headers=["https://aura-legal-guide.lovable.app"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 class ChatRequest(BaseModel):
